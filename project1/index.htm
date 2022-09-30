@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁|台灣經濟發展歷史</title>
+    <meta name="description" content="此網站展示台灣過去五十年至七十年的經濟發展歷史，以及促成其發展的相關政策" />
+    <link rel="shortcut icon" href="./images/taiwanIcon.png">
+    <link rel="bookmark" href="./images/taiwanIcon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./twicon/twicon.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            // Some raw data (not necessarily accurate)
+            var data = google.visualization.arrayToDataTable([
+                ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+                ['2050/05', 165, 938, 522, 998, 450, 614.6],
+                ['2050/06', 135, 1120, 599, 1268, 288, 682],
+                ['2050/07', 157, 1167, 587, 807, 397, 623],
+                ['2050/08', 139, 1110, 615, 968, 215, 609.4],
+                ['2050/09', 136, 691, 629, 1026, 366, 569.6]
+            ]);
+
+            var options = {
+                title: 'Monthly Coffee Production by Country',
+                vAxis: { title: 'Cups' },
+                hAxis: { title: 'Month' },
+                seriesType: 'bars',
+                series: { 5: { type: 'line' } }
+            };
+
+            var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <!-- 首頁標題 -->
+        <header>
+            <h1 align="center"><i class="twicon-main-island"></i>台灣經濟發展歷史</h1>
+            <p align="center">過去70年經濟發展的歷史以及相關政策</p>
+        </header>
+        <!-- 導覽列 -->
+        <nav>
+            <ul>
+                <li><a href="index.htm"><i class="twicon-taipei101"></i>首頁</a></li>
+                <li><a href="agriculture.htm"><i class="twicon-l-easy-card"></i>農業改革</a></li>
+                <li><a href="industralization.htm"><i class="twicon-85tower"></i>工業改革</a></li>
+                <li><a href="economy.htm"><i class="twicon-lovers-brg"></i>經濟起飛</a></li>
+                <li><a href="author.htm"><i class="twicon-kano-staue"></i>關於作者</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <section class="left">
+                <p>
+                    台灣是太平洋中的一個島嶼。今天，這個島上生活著不同的人群，包括福建，客家，其他省份的中國人，台灣原住民和東南亞移民。第二次世界大戰之前，台灣是日本的殖民地。
+                    1895年，由於第一次抗日戰爭失敗，中國將台灣，遼東半島等地賜予日本。第二次世界大戰後，中華民國政府移居台灣，並開始建造該島。中華民國政府在1949年到達台灣時，
+                    也有將近200萬士兵及其家屬也移居台灣。當時中華民國政府到達台灣時，有許多事情需要解決。 1945年第二次世界大戰結束時，台灣的經濟和衛生條件很低。中華民國政府對台灣的發展產生了重大影響，
+                    將經濟實體從農業轉變為高科技產業。
+                    在1960年代至1980年代期間，一系列嚴肅的新政策和發展計劃使台灣工業化。台灣國家統計局表示，1965年人均GDP為229美元，而30年後，1984年人均GDP增至3225美元。
+                </p>
+                <br>
+                <p>
+                    當R.O.C. 政府到達台灣後，他們所做的第一件事是一系列的土地政策。 首先，他們修改了法案以減少與中國法案系統的聯繫，然後發行了台幣。
+                    之後，他們為農民建立了許多規則，以便他們能夠自給自足。 改善經濟狀況的第二步是發展“輕工業”。 政府開始幫助建立小工廠，生產紡織品，鞋和紙。 這幫助台灣準備轉移到“重工業”。
+                    為了刺激投資，政府鼓勵世界各地的投資者在台灣港口建立工廠。 這次是發展的第三步。 該網站將討論台灣發生了什麼，台灣的政策和變化以及誰來幫助並使所有這些事情發揮作用。
+                <div id="chart_div" style="width: 900px; height: 500px;"></div>
+                </p>
+            </section>
+            <section class="right">
+                <h5>台灣經濟發展小知識:你知道台灣在哪裡嗎?</h5>
+                <br>
+                <p>
+                    台灣是太平洋上的一個小島。 它毗鄰中國，在島上的原住民被認為是太平洋群島南島語族語系人民的起源。
+                    台灣的陸地面積為13972公里，島上約有2380萬人居住，最主要通用語言為中文、閩南語、客家話。
+                </p>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8471.403246156413!2d120.61040038335425!3d24.179475214746045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346915e48bf680eb%3A0xba05e6cd02109eee!2z5ryr6Kq_5pav55CG6aOb6Y-i6aSQ5buz!5e0!3m2!1szh-TW!2stw!4v1656394723777!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
